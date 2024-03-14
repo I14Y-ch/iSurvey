@@ -27,6 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         # Add any dependencies here, for example:
         pip install requests
+        pip install lxml
 
     - name: Run codelists_to_lsl.py
       run: python codelists_to_lsl.py
