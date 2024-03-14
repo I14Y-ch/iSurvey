@@ -28,5 +28,5 @@ jobs:
         # Add any dependencies here, for example:
         # pip install requests
 
-    - name: Run script.py
-      run: python script.py
+    - name: Run codelists_to_lsl.py
+      run: python codelists_to_lsl.py
