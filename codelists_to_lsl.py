@@ -1,129 +1,116 @@
 import requests
-
+from lxml import etree
+import logging
 
 def download_i14y_data():
+    logging.info('Downloading i14y data codelists...')
     url = 'https://input.i14y.admin.ch/api/ConceptSummary/search?page=0&pageSize=1000'
     data = requests.get(url).json()
 
-    codelists = []
+    code_lists = []
     codes = [(entry['id'], entry['name']) for entry in data if entry['conceptType'] == 'CodeList']
 
     for id, name in codes:
         url = f'https://input.i14y.admin.ch/api/ConceptInput/{id}/codelistEntries?page=1&pageSize=10000'
         response = requests.get(url)
         if response.status_code == 200:
-            codelists.append({'id': id, 'name': name, 'codelist': response.json()})
+            code_lists.append({'id': id, 'name': name, 'codelist': response.json()})
 
     # save_file = open("codelists.json", "w")
     # json.dump(codelists, save_file, indent = 6)
     # save_file.close()
 
-    return codelists
+    return code_lists
 
 
-def generate_isurvey_codelist(codelists):
-    document = '''
-        <?xml version="1.0" encoding="UTF-8"?>
-        <document>
-        <LimeSurveyDocType>Label set</LimeSurveyDocType>
-        <DBVersion>623</DBVersion>
-        '''
+def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
+    logging.info(f'Generating LimeSurvey labelset {filename}...')
+    document = etree.Element('document')
+    etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
+    etree.SubElement(document, 'DBVersion').text = '623'
 
-    labelsets = '''
-    <labelsets>
-    <fields>
-    <fieldname>lid</fieldname>
-    <fieldname>label_name</fieldname>
-    <fieldname>languages</fieldname>
-    </fields>
-    <rows>
-    '''
+    labelsets = etree.SubElement(document, 'labelsets')
+    fields_ls = etree.SubElement(labelsets, 'fields')
+    for fname in ['lid', 'owner_id', 'label_name', 'languages']:
+        etree.SubElement(fields_ls, 'fieldname').text = fname
+    rows_ls = etree.SubElement(labelsets, 'rows')
 
-    labels = '''
-    <labels>
-    <fields>
-    <fieldname>id</fieldname>
-    <fieldname>lid</fieldname>
-    <fieldname>code</fieldname>
-    <fieldname>sortorder</fieldname>
-    </fields>
-    <rows>
-    '''
+    labels = etree.SubElement(document, 'labels')
+    fields_lbl = etree.SubElement(labels, 'fields')
+    for fname in ['id', 'lid', 'code', 'sortorder', 'assessment_value']:
+        etree.SubElement(fields_lbl, 'fieldname').text = fname
+    rows_lbl = etree.SubElement(labels, 'rows')
 
-    label_l10ns = '''
-    <label_l10ns>
-    <fields>
-    <fieldname>id</fieldname>
-    <fieldname>label_id</fieldname>
-    <fieldname>title</fieldname>
-    <fieldname>language</fieldname>
-    </fields>
-    <rows>
-    '''
+    label_l10ns = etree.SubElement(document, 'label_l10ns')
+    fields_l10n = etree.SubElement(label_l10ns, 'fields')
+    for fname in ['id', 'label_id', 'title', 'language']:
+        etree.SubElement(fields_l10n, 'fieldname').text = fname
+    rows_l10n = etree.SubElement(label_l10ns, 'rows')
 
     lid = 1
     code_id = 1
     lang_id = 1
-    languages = ['de', 'en', 'fr', 'it']
 
-    for entry in codelists:
+    for codelist in codelists:
+        if len(codelist['codelist']) > 1000:
+            continue
+        row_ls = etree.SubElement(rows_ls, 'row')
+        etree.SubElement(row_ls, 'lid').text = etree.CDATA(str(lid))
+        etree.SubElement(row_ls, 'owner_id').text = etree.CDATA("1")
+        etree.SubElement(row_ls, 'label_name').text = etree.CDATA(codelist['name']['de'])
+        # Take only the languages that are in the codelist and not None
+        languages = []
+        for entry in codelist['codelist']:
+            for lang in entry['name']:
+                if 'name' in entry and entry['name'][lang] is not None and lang not in languages:
+                    languages.append(lang)
 
-        labelsets += f''' 
-            <row>
-                <lid><![CDATA[{lid}]]></lid>
-                <label_name><![CDATA[{entry['name']['de']}]]></label_name>
-                <languages><![CDATA[de en fr it]]></languages>
-            </row>
-        '''
-        for code in entry['codelist']:
-            labels += f'''
-            <row>
-                <id><![CDATA[{code_id}]]></id>
-                <lid><![CDATA[{lid}]]></lid>
-                <code><![CDATA[{code['value']}]]></code>
-                <sortorder><![CDATA[{code_id}]]></sortorder>
-            </row>
-            '''
+        etree.SubElement(row_ls, 'languages').text = etree.CDATA(' '.join(languages))
 
-            for i in range(len(languages)):
-                label_l10ns += f'''
-                    <row>
-                        <id><![CDATA[{lang_id}]]></id>
-                        <label_id><![CDATA[{code_id}]]></label_id>
-                        <title><![CDATA[{code['name'][languages[i]]}]]></title>
-                        <language><![CDATA[[{languages[i]}]]></language>
-                    </row>
-                '''
+        list_id = 1
+        for code in codelist['codelist']:
+            row_lbl = etree.SubElement(rows_lbl, 'row')
+            etree.SubElement(row_lbl, 'id').text = etree.CDATA(str(code_id))
+            etree.SubElement(row_lbl, 'lid').text = etree.CDATA(str(lid))
+            etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(4)}')
+            etree.SubElement(row_lbl, 'sortorder').text = etree.CDATA(
+                str(code_id))  # Assuming sortorder is the same as the id
+            etree.SubElement(row_lbl, 'assessment_value').text = etree.CDATA("0")  # Assuming 0 as the assessment value
+
+            for lang in languages:
+                row_l10n = etree.SubElement(rows_l10n, 'row')
+                etree.SubElement(row_l10n, 'id').text = etree.CDATA(str(lang_id))
+                etree.SubElement(row_l10n, 'label_id').text = etree.CDATA(str(code_id))
+                if code['name'][lang] is None:
+                    etree.SubElement(row_l10n, 'title').text = etree.CDATA('')
+                else:
+                    etree.SubElement(row_l10n, 'title').text = etree.CDATA(code['name'][lang])
+                etree.SubElement(row_l10n, 'language').text = etree.CDATA(lang)
 
                 lang_id += 1
 
             code_id += 1
+            list_id += 1
 
         lid += 1
 
-    labelsets += '''
-    </rows>
-    </labelsets
-    '''
-
-    labels += '''
-    </rows>
-    </labels>
-    '''
-
-    label_l10ns += '''
-    </rows>
-    </label_l10ns>
-    '''
-
-    document = labelsets + labels + label_l10ns
-
-    return document
+    tree = etree.ElementTree(document)
+    tree.write(filename, pretty_print=True, encoding='UTF-8', xml_declaration=True)
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     codelists = download_i14y_data()
-    xml = generate_isurvey_codelist(codelists[:2])
-    # Write xml to file
-    with open('codelists.lsl', 'w') as file:
-        file.write(xml)
+    for codelist in codelists:
+        codelist['name']['roh'] = codelist['name'].pop('rm')
+        for code in codelist['codelist']:
+            code['name']['roh'] = code['name'].pop('rm')
+
+    generate_limesurvey_labelset(codelists)
+    logging.info('Job successful')
+    quit()
+
+    size = 1
+    for i in range(0, len(codelists), size):
+        logging.info(f'Processing codelists {i} to {i + size}')
+        generate_limesurvey_labelset(codelists[i:i + size], f'lsl-files/isurvey_codelist_{i}.lsl')
