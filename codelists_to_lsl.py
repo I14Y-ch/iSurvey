@@ -1,6 +1,4 @@
 import requests
-import json
-from dict2xml import dict2xml
 
 
 def download_i14y_data():
