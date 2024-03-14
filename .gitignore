@@ -6,7 +6,7 @@ __pycache__/
 # LimeSurvey
 config/
 mysql/
-
+plugins/
 sessions/
 upload/
 
