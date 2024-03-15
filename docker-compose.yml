@@ -25,3 +25,12 @@ services:
       MYSQL_ROOT_PASSWORD: e/xa|m|ple
     volumes:
        - ./mysql:/var/lib/mysql
+
+  i14y:
+      build: 
+        context: . # Pfad zum Dockerfile, falls sich im aktuellen Verzeichnis
+        dockerfile: Dockerfile # Name des Dockerfile, falls abweichend
+      volumes:
+        - ./i14y/app:/app # Anpassen an Ihren Pfad
+      depends_on:
+        - mysql # Falls Ihr Service von der MySQL-Datenbank abhängig ist
