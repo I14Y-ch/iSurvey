@@ -1,7 +1,7 @@
 import requests
 from lxml import etree
 import logging
-# Trigger
+
 def download_i14y_data():
     logging.info('Downloading i14y data codelists...')
     url = 'https://input.i14y.admin.ch/api/ConceptSummary/search?page=0&pageSize=1000'
