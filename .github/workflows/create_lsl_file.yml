@@ -2,11 +2,11 @@ name: Create Limesurvey-file
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'codelists_to_lsl.py'
   pull_request:
-    branches:
-      - main
+    paths:
+      - 'codelists_to_lsl.py'
   schedule:
     - cron: '0 8 * * *'
 
@@ -31,3 +31,11 @@ jobs:
 
     - name: Run codelists_to_lsl.py
       run: python codelists_to_lsl.py
+
+    - name: Commit changes
+      run: |
+          git config --global user.email "orhan.saeedi@bs.ch"
+          git config --global user.name "Orhan Saeedi"
+          git add isurvey_codelist.lsl
+          git commit -m "Update isurvey_codelist.lsl - $(date +'%Y-%m-%d')"
+          git push
