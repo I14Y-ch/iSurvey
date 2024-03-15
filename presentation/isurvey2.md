@@ -11,7 +11,7 @@ style: |
 ---
 
 ![bg opacity:0.35 blur w:100%](img/5_brücke.jpg)
-# iSurvey <!-- fit -->
+# iSurvey 
 
 ---
 
@@ -23,25 +23,26 @@ style: |
 
 ![bg w:100%](img/1_happy.jpg)
 
-<!-- Seine Chefin hat ihn gebeten, eine Datensammlung zu aktualisieren. Mit einer Online-Umfrage. Dazu nutzt Martin die weit verbreitete Umfrage-Software Limesurvey. Denn damit lassen sich auch komplizierte Umfragen machen. Und: Er darf sie kostenlos benutzen. Soweit, so gut. -->
+<!-- Seine Chefin will wissen, mit welchen Fahrzeugarten die Einwohnerinnen und Einwohner unterwegs sind. Martin soll eine Online-Umfrage vorbereiten. Noch heute. Mit der Umfrage-Software Limesurvey. Denn damit lassen sich auch komplizierte Umfragen machen. Und vorallem: Denn sie darf kostenlos genutzt werden. -->
+
+---
+
+![bg w:100%](img/i14y_fahrzeugarten.png)
+
+<!-- Auf der I14Y--Interoperabilitätsplattform entdeckt Martin zahlreiche Codelisten. Auch eine zu den Fahrzeugarten. Soweit, so gut. -->
 
 ---
 
 ![bg w:100%](img/2_verzweifelt.jpg)
 
-<!-- Doch nun realisiert Martin: Er muss die möglichen Ausprägungen jeder Variable manuell erfassen. Martin ist ein Datennerd wie aus dem Comic-Buch. Abtippen und Copy-Paste ist im ein Graus. -->
+<!-- Doch dann fragt sich Martin: Wie kriegt er all die Codelisten ins Umfragetool: Mit viel Abtippen und ebenso viel Copy-Paste? Martin ist ein Datennerd wie aus dem Comic-Buch. Manuelle und damit fehleranfällige Arbeiten sind ihm ein Graus. -->
 
 ---
 
-# ??? <!-- fit -->
-
-<!-- Wie geht die Geschichte des fiktiven Beamten Martin weiter? -->
-
----
 
 ![bg w:100%](img/3_schlaf.jpg)
 
-<!-- Muss er die dröge Arbeit wirklich machen, bis er am frühen Morgen vor Erschöpfung einnickt? -->
+<!-- Wie geht die Geschichte des fiktiven Beamten Martin weiter? Muss er wirklich seinen Feierabend opfern und die Nacht durcharbeiten, bis er frühmorgens vor Erschöpfung einnickt? -->
 
 ---
 
@@ -51,33 +52,38 @@ style: |
 
 Baue eine Brücke zwischen der I14Y-Interoperabilitätsplattform und Limesurvey. 
 
+<!-- Mein Apell von gestern: Helft Martin. Baut eine Brücke zwischen der I14Y und Limesurvey. Eine Handvoll Entwicklern hat sich dem Problem angenommen. Hannes -- was habt ihr ausgeheckt? -->
+
 ---
 
 # Prozess
 
-![bg w:100%](img/Prozess.png)
+![w:75%](img/Prozess.png)
 
 ---
 
-# Produkt
+# Architektur
 
-![bg w:100%](img/Produkt.png)
+![w:75%](img/Produkt.png)
 
 ---
 
-# Arbeitsablauf
+# Produkt 
+
+![w:75%](limesurvey_fahrzeugarten.mov)
 
 --- 
 
-
 ![bg w:100%](img/4_sportlich.jpg)
 
-<!-- Oder helft ihr ihm, so dass er es noch am späten Nachmittag auf den Tennisplatz schafft? -->
+<!-- Die Gruppe steht kurz vor dem Abschluss der Arbeiten. Es ist also gut möglich, dass Martin die Nacht nicht durcharbeiten muss. Und es stattdessen noch am späten Nachmittag auf den Tennisplatz schafft? -->
 
 ---
 
 ![bg right w:85%](img/logo_i14y.png)
 
-Mitarbeit: 
+__Challenge:__ I14Y.ch, Mathias Born
 
-Bilder: Liebevoll gezeichnet von der künstlichen Intelligenz <br/>[Comicai.ai](https://comicai.ai)
+__Mitarbeit:__ Johannes Hool, Marc Stettler, Mario Bee, Nuno Canadas, Orhan Saeedi 
+
+__Bilder:__ Liebevoll gezeichnet von der künstlichen Intelligenz <br/>[Comicai.ai](https://comicai.ai)
