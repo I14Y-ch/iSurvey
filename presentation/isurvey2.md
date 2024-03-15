@@ -55,15 +55,13 @@ Baue eine Brücke zwischen der I14Y-Interoperabilitätsplattform und Limesurvey.
 
 # Prozess
 
-I14Y -> Github -> Limesurvey
+![bg w:100%](img/Prozess.png)
 
 ---
 
-# Architektur
+# Produkt
 
-- Codelists auf Github
-- Dockerized Limesurvey
-- Plugin
+![bg w:100%](img/Produkt.png)
 
 ---
 
