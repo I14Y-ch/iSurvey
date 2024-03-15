@@ -14,11 +14,11 @@ services:
       LIMESURVEY_ADMIN_NAME: Lime Administrator
       LIMESURVEY_ADMIN_EMAIL: lime@lime.lime
       TZ: Europe/London
-    volumes:
+    #volumes:
       #- ./plugins:/var/www/html/plugins
-      - ./upload:/var/www/html/upload
-      - ./config:/var/www/html/application/config
-      - ./sessions:/var/lime/sessions
+      #- ./upload:/var/www/html/upload
+      #- ./config:/var/www/html/application/config
+      #- ./sessions:/var/lime/sessions
 
   mysql:
     image: mariadb:10.5

@@ -23,7 +23,7 @@ def download_i14y_data():
     return code_lists
 
 
-def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
+def generate_limesurvey_labelset(codelists, filename="./i14y/app/isurvey_codelist.lsl"):
     logging.info(f'Generating LimeSurvey labelset {filename}...')
     document = etree.Element('document')
     etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
@@ -102,16 +102,15 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     codelists = download_i14y_data()
+    '''
+    with open('codelists.json', 'r') as file:
+        codelists = json.load(file)
+    '''
+
     for codelist in codelists:
         codelist['name']['roh'] = codelist['name'].pop('rm')
         for code in codelist['codelist']:
             code['name']['roh'] = code['name'].pop('rm')
 
-    generate_limesurvey_labelset(codelists)
+    generate_limesurvey_labelset(codelists[:2])
     logging.info('Job successful')
-    quit()
-
-    size = 1
-    for i in range(0, len(codelists), size):
-        logging.info(f'Processing codelists {i} to {i + size}')
-        generate_limesurvey_labelset(codelists[i:i + size], f'lsl-files/isurvey_codelist_{i}.lsl')
