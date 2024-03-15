@@ -52,7 +52,8 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
     lang_id = 1
 
     for codelist in codelists:
-        if len(codelist['codelist']) > 1000:
+        if len(codelist['codelist']) >= 1000:
+            logging.info(f'Codelist {codelist["name"]} has more than 1000 entries, skipping...')
             continue
         row_ls = etree.SubElement(rows_ls, 'row')
         etree.SubElement(row_ls, 'lid').text = etree.CDATA(str(lid))
@@ -72,7 +73,7 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
             row_lbl = etree.SubElement(rows_lbl, 'row')
             etree.SubElement(row_lbl, 'id').text = etree.CDATA(str(code_id))
             etree.SubElement(row_lbl, 'lid').text = etree.CDATA(str(lid))
-            etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(4)}')
+            etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(3)}')
             etree.SubElement(row_lbl, 'sortorder').text = etree.CDATA(
                 str(code_id))  # Assuming sortorder is the same as the id
             etree.SubElement(row_lbl, 'assessment_value').text = etree.CDATA("0")  # Assuming 0 as the assessment value
