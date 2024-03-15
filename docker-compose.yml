@@ -24,8 +24,8 @@ services:
     image: mariadb:10.5
     environment:
       MYSQL_ROOT_PASSWORD: e/xa|m|ple
-    volumes:
-       - ./mysql:/var/lib/mysql
+    #volumes:
+    #   - ./mysql:/var/lib/mysql
 
   i14y:
       build: 
