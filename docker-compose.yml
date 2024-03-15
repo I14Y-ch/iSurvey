@@ -15,8 +15,8 @@ services:
       LIMESURVEY_ADMIN_EMAIL: lime@lime.lime
       TZ: Europe/London
     volumes:
-      #- ./plugins:/var/www/html/plugins
-      - ./upload:/var/www/html/upload
+      - ./plugins:/var/www/html/plugins
+      #- ./upload:/var/www/html/upload
       - ./config:/var/www/html/application/config
       - ./sessions:/var/lime/sessions
 
