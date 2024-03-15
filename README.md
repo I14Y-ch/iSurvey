@@ -15,6 +15,7 @@ Um mit iSurvey zu beginnen, folgen Sie diesen Schritten:
 3. Starten Sie die Anwendung mit Docker-Compose:
 
 ```bash
+docker-compose build
 docker-compose up -d
 ```
 ## LimeSurvey
