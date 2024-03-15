@@ -1,6 +1,7 @@
 import requests
 from lxml import etree
 import logging
+import json
 
 def download_i14y_data():
     logging.info('Downloading i14y data codelists...')
@@ -16,14 +17,38 @@ def download_i14y_data():
         if response.status_code == 200:
             code_lists.append({'id': id, 'name': name, 'codelist': response.json()})
 
-    # save_file = open("codelists.json", "w")
-    # json.dump(codelists, save_file, indent = 6)
-    # save_file.close()
+    save_file = open("codelists.json", "w")
+    json.dump(code_lists, save_file, indent = 6)
+    save_file.close()
 
     return code_lists
 
 
-def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
+def test_special_character(codelist, spec_char):
+    vals = []
+    for code in codelist:
+        vals.append(code['value'])
+
+    for val in vals:
+        if spec_char in val:
+            return True
+        
+    return False
+
+def test_code_length(codelist, length):
+    vals = []
+    for code in codelist:
+        vals.append(code['value'])
+
+    for val in vals:
+        if len(str(val)) > length:
+            return True
+        
+    return False
+            
+
+
+def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl", blacklist=[]):
     logging.info(f'Generating LimeSurvey labelset {filename}...')
     document = etree.Element('document')
     etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
@@ -50,11 +75,31 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
     lid = 1
     code_id = 1
     lang_id = 1
+    exclusions = []
 
     for codelist in codelists:
-        if len(codelist['codelist']) >= 1000:
-            logging.info(f'Codelist {codelist["name"]} has more than 1000 entries, skipping...')
+        if codelist['name']['de'] in blacklist:
+            exclusions.append(codelist['name']['de'])
+            print('Skip', codelist['name']['de'])
             continue
+
+        if test_special_character(codelist['codelist'], '_'):
+            exclusions.append(codelist['name']['de'])
+            print('Skip', codelist['name']['de'])
+            continue
+
+        if test_code_length(codelist['codelist'], 5):
+            exclusions.append(codelist['name']['de'])
+            print('Skip', codelist['name']['de'])
+            continue
+    
+
+        if len(codelist['codelist']) >= 100:
+            logging.info(f'Codelist {codelist["name"]} has more than 1000 entries, skipping...')
+            exclusions.append(codelist['name']['de'])
+            print('Skip', codelist['name']['de'])
+            continue
+
         row_ls = etree.SubElement(rows_ls, 'row')
         etree.SubElement(row_ls, 'lid').text = etree.CDATA(str(lid))
         etree.SubElement(row_ls, 'owner_id').text = etree.CDATA("1")
@@ -73,7 +118,7 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
             row_lbl = etree.SubElement(rows_lbl, 'row')
             etree.SubElement(row_lbl, 'id').text = etree.CDATA(str(code_id))
             etree.SubElement(row_lbl, 'lid').text = etree.CDATA(str(lid))
-            etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(4)}')
+            etree.SubElement(row_lbl, 'code').text = etree.CDATA('code_'+code['value'])
             etree.SubElement(row_lbl, 'sortorder').text = etree.CDATA(
                 str(code_id))  # Assuming sortorder is the same as the id
             etree.SubElement(row_lbl, 'assessment_value').text = etree.CDATA("0")  # Assuming 0 as the assessment value
@@ -98,16 +143,34 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
     tree = etree.ElementTree(document)
     tree.write(filename, pretty_print=True, encoding='UTF-8', xml_declaration=True)
 
+    with open(r'exclusions.txt', 'w') as fp:
+        for item in exclusions:
+            # write each item on a new line
+            fp.write("%s\n" % item)
+
+    print(exclusions)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    codelists = download_i14y_data()
+
+    # codelists = download_i14y_data()
+    with open('codelists.json', 'r') as file:
+        codelists = json.load(file)
+
+    blacklist = [
+        'I14Y Vertraulichkeit Personendaten',
+        'Beziehung zwischen Datasets'
+    ]
+
+
+
     for codelist in codelists:
         codelist['name']['roh'] = codelist['name'].pop('rm')
         for code in codelist['codelist']:
             code['name']['roh'] = code['name'].pop('rm')
 
-    generate_limesurvey_labelset(codelists)
+    generate_limesurvey_labelset(codelists, blacklist=blacklist)
     logging.info('Job successful')
     quit()
 
