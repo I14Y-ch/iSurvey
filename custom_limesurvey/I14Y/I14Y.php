@@ -9,7 +9,7 @@ class I14Y extends PluginBase {
 		'i14yURI' => array(
 			'type' => 'string',
 			'label' => 'Download-URL für I14Y-Daten',
-			'default' => 'https://raw.githubusercontent.com/I14Y-ch/iSurvey/main/codelists.lsl'
+			'default' => 'https://raw.githubusercontent.com/I14Y-ch/iSurvey/main/i14y/app/isurvey_codelist.lsl'
 		)
 	);
 	public function init() {
