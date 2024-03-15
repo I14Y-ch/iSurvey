@@ -23,7 +23,7 @@ def download_i14y_data():
     return code_lists
 
 
-def generate_limesurvey_labelset(codelists, filename="i14y/app/isurvey_codelist.lsl"):
+def generate_limesurvey_labelset(codelists, filename="./i14y/app/isurvey_codelist.lsl"):
     logging.info(f'Generating LimeSurvey labelset {filename}...')
     document = etree.Element('document')
     etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
