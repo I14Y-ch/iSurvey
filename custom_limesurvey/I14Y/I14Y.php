@@ -26,9 +26,16 @@ class I14Y extends PluginBase {
 	}
 	private function downloadI14Y() {
 		$options = array(
-			'checkforduplicates' => 'off'
+			'checkforduplicates' => 'on'
 		);
-		$importResults = XMLImportLabelsets($this->getPluginSettings()['i14yURI']['current'], $options);
+		$url = $this->getPluginSettings()['i14yURI']['current'];
+		$this->log($url);
+		$tmpfile = tempnam(sys_get_temp_dir(), 'i14y');
+		$this->log("Processing download ...");
+		// Download contents of URL to temporary file
+
+		// Parse and import results to Limesurvey API
+		$importResults = XMLImportLabelsets($tmpfile, $options); // https://api.limesurvey.org/namespaces/default.html#function_XMLImportLabelsets
 		$this->log($importResults);
 	}
 }

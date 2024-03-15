@@ -1,4 +1,5 @@
 # iSurvey -- die Brücke zwischen I14Y und Limesurvey
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/I14Y-ch/iSurvey)
 
 Auf der [I14Y-Interoperabilitätsplattform](https://i14y.admin.ch) sind harmonisierte und standardisierte Codelisten der Schweizer Behörden erhältlich. Diese sollen in der quelloffenen Umfragesoftware [Limesurvey](https://limesurvey.org) auf einfache Weise genutzt werden können. Der Prototyp iSurvey versucht diese Brücke zu schlagen. Entwickelt wurde er im Rahmen des [GovTech-Hackathons 2024](https://www.bk.admin.ch/bk/de/home/digitale-transformation-ikt-lenkung/bundesarchitektur/api-architektur-bund/govtech-hackathon24.html).  
 
