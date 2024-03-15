@@ -34,8 +34,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        git config --global user.email "orhan.saeedi@bs.ch"
-        git config --global user.name "Orhan Saeedi"
+        git config --global user.email "mathias.born@bfs.admin.ch"
+        git config --global user.name "MathiasBornI14Y"
         git add isurvey_codelist.lsl
         DATE=`date +%Y-%m-%d`
         git commit -m "Update isurvey_codelist.lsl - $DATE"
