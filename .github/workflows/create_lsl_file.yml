@@ -34,8 +34,10 @@ jobs:
 
     - name: Commit changes
       run: |
-          git config --global user.email "orhan.saeedi@bs.ch"
-          git config --global user.name "Orhan Saeedi"
-          git add isurvey_codelist.lsl
-          git commit -m "Update isurvey_codelist.lsl - $(date +'%Y-%m-%d')"
-          git push
+        git config --global user.email "orhan.saeedi@bs.ch"
+        git config --global user.name "Orhan Saeedi"
+        git add isurvey_codelist.lsl
+        DATE=`date +%Y-%m-%d`
+        git commit -m "Update isurvey_codelist.lsl - $DATE"
+        # Use the GH_PAT for the push operation
+        git -c http.extraheader="AUTHORIZATION: basic $(echo -n x-access-token:${{ secrets.GH_PAT }} | base64)" push
