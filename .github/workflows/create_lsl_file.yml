@@ -31,7 +31,10 @@ jobs:
         pip install -r i14y/requirements.txt
 
     - name: Run codelists_to_lsl.py
-      run: python i14y/app/codelists_to_lsl.py
+      run: |
+        cd i14y/app
+        python codelists_to_lsl.py
+        cd ../..
 
     - name: Commit changes
       run: |
