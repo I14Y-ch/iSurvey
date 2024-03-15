@@ -1,0 +1,55 @@
+Zahlung der Leistung
+Berufsuntergruppen CH-ISCO-19
+Berufsarten CH-ISCO-19
+Berufsarten CH-ISCO-19
+Berufsgattungen CH-ISCO-19
+Schweizerische Operationsklassifikation (CHOP) - Systematisches Verzeichnis - Version 2023 vom 29.07.2022
+Bezeichner der GRSS Buchungsposition
+Gegengebiet
+Regime der sozialen Sicherheit in der Schweiz
+Regime der sozialen Sicherheit
+Detaillierte Sozialleistung
+DocumentEntry.classCode
+DocumentEntry.confidentialityCode
+DocumentEntry.eventCodeList
+DocumentEntry.formatCode
+DocumentEntry.healthcareFacilityTypeCode
+DocumentEntry.mimeType
+DocumentEntry.practiceSettingCode
+DocumentEntry.sourcePatientInfo.PID-8
+DocumentEntry.typeCode
+EprAuditTrailConsumptionEventType
+EprDeletionStatus
+DocumentEntry.languageCode
+EprPurposeOfUse
+HCProfessional.hcProfession
+SubmissionSet.contentTypeCoder
+Art der Ausgabe
+Funktion des Sozialschutzes
+Gruppierung von Ländern in Europa für GRSS
+Elementare oder aggregierte Buchungsposition
+Kantone, Bezirke und Gemeinden (01.01.2023)
+Mehrgeschossige Wohnung
+NOGA Klasse
+NOGA Gruppe
+NOGA OFS50
+NOGA Art
+Art der Rente
+Art der Einnahme
+Hauptarten von Ausgaben
+Hauptarten von Einnahmen
+Staaten und Gebiete ISO 3166-1 alpha-2
+Finanzielle Masseinheit
+Stockwerk
+Finanzstatistik-Modell: Artengliederung - Bilanz
+Finanzstatistik-Modell: Artengliederung - Erfolgsrechnung
+ Finanzstatistik-Modell: Artengliederung - Finanzierungsrechnung
+FS-Modell: funktionale Gliederung
+Government Finance Statistics Modell: Artengliederung - Transaktionen
+Government Finance Statistics Modell: funktionale Gliederung
+Karosserieformcodes
+EU Themenvokabular
+Aktualisierungsintervall
+I14Y Qualifizierte Zuteilung
+I14Y Vertraulichkeit Personendaten
+Beziehung zwischen Datasets

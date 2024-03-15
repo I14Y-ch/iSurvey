@@ -24,27 +24,16 @@ def download_i14y_data():
     return code_lists
 
 
-def test_special_character(codelist, spec_char):
+def test_val(codelist, func):
     vals = []
     for code in codelist:
         vals.append(code['value'])
 
     for val in vals:
-        if spec_char in val:
+        if func(val):
             return True
         
-    return False
-
-def test_code_length(codelist, length):
-    vals = []
-    for code in codelist:
-        vals.append(code['value'])
-
-    for val in vals:
-        if len(str(val)) > length:
-            return True
-        
-    return False
+    return False   
             
 
 
@@ -83,12 +72,12 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl", bla
             print('Skip', codelist['name']['de'])
             continue
 
-        if test_special_character(codelist['codelist'], '_'):
+        if test_val(codelist['codelist'], lambda x: '-' in x):
             exclusions.append(codelist['name']['de'])
             print('Skip', codelist['name']['de'])
             continue
 
-        if test_code_length(codelist['codelist'], 5):
+        if test_val(codelist['codelist'], lambda x: len(str(x)) > 5):
             exclusions.append(codelist['name']['de'])
             print('Skip', codelist['name']['de'])
             continue
@@ -101,7 +90,7 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl", bla
             continue
 
         row_ls = etree.SubElement(rows_ls, 'row')
-        etree.SubElement(row_ls, 'lid').text = etree.CDATA(str(lid))
+        etree.SubElement(row_ls, 'lid').text = etree.CDATA(f'lid_{str(lid)}')
         etree.SubElement(row_ls, 'owner_id').text = etree.CDATA("1")
         etree.SubElement(row_ls, 'label_name').text = etree.CDATA(codelist['name']['de'])
         # Take only the languages that are in the codelist and not None
@@ -117,8 +106,8 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl", bla
         for code in codelist['codelist']:
             row_lbl = etree.SubElement(rows_lbl, 'row')
             etree.SubElement(row_lbl, 'id').text = etree.CDATA(str(code_id))
-            etree.SubElement(row_lbl, 'lid').text = etree.CDATA(str(lid))
-            etree.SubElement(row_lbl, 'code').text = etree.CDATA('code_'+code['value'])
+            etree.SubElement(row_lbl, 'lid').text = etree.CDATA(f'lid_{str(lid)}')
+            etree.SubElement(row_lbl, 'code').text = etree.CDATA(code['value'])
 
             etree.SubElement(row_lbl, 'sortorder').text = etree.CDATA(
                 str(code_id))  # Assuming sortorder is the same as the id
@@ -161,7 +150,8 @@ if __name__ == "__main__":
 
     blacklist = [
         'I14Y Vertraulichkeit Personendaten',
-        'Beziehung zwischen Datasets'
+        'Beziehung zwischen Datasets',
+        'Mehrgeschossige Wohnung'
     ]
 
 
