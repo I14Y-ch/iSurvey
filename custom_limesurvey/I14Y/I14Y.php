@@ -26,7 +26,7 @@ class I14Y extends PluginBase {
 	}
 	private function downloadI14Y() {
 		$options = array(
-			'checkforduplicates' => 'off'
+			'checkforduplicates' => 'on'
 		);
 		$url = $this->getPluginSettings()['i14yURI']['current'];
 		$this->log($url);
