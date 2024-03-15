@@ -34,3 +34,4 @@ services:
         - ./i14y/app:/app # Anpassen an Ihren Pfad
       depends_on:
         - mysql # Falls Ihr Service von der MySQL-Datenbank abhängig ist
+        - limesurvey
