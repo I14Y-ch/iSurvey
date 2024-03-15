@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Befehl, der beim Start des Containers ausgeführt wird
-CMD ["python", "script.py"]
+CMD ["python", "codelists_to_lsl.py"]
