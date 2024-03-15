@@ -37,7 +37,13 @@ jobs:
         git config --global user.email "mathias.born@bfs.admin.ch"
         git config --global user.name "MathiasBornI14Y"
         git add isurvey_codelist.lsl
-        DATE=`date +%Y-%m-%d`
-        git commit -m "Update isurvey_codelist.lsl - $DATE"
-        # Use the GH_PAT for the push operation
-        git -c http.extraheader="AUTHORIZATION: basic $(echo -n x-access-token:${{ secrets.GH_PAT }} | base64)" push
+
+        # Check if there are changes in isurvey_codelist.lsl
+        if git diff --cached --exit-code --quiet isurvey_codelist.lsl; then
+            echo "No changes in isurvey_codelist.lsl, skipping commit."
+        else
+            DATE=`date +%Y-%m-%d`
+            git commit -m "Update isurvey_codelist.lsl - $DATE"
+            # Use the GH_PAT for the push operation
+            git -c http.extraheader="AUTHORIZATION: basic $(echo -n x-access-token:${{ secrets.GH_PAT }} | base64)" push
+        fi
