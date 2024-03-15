@@ -10,6 +10,9 @@ on:
   schedule:
     - cron: '0 8 * * *'
 
+permissions:
+  contents: write
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -40,6 +43,6 @@ jobs:
         else
             DATE=$(date +%Y-%m-%d)
             git commit -m "Update isurvey_codelist.lsl - $DATE"
-            # Directly using PAT in the git push command
-            git push https://${{ secrets.GH_PAT }}@github.com/I14Y-ch/iSurvey.git
+            # Explicitly using the HTTPS protocol and including the PAT in the URL
+            git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/I14Y-ch/iSurvey.git
         fi
