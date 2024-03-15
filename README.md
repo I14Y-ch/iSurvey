@@ -25,10 +25,10 @@ Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende 
 4. Starten der Applikation mit ```docker-compose up -d```. Limesurvey ist nun unter http://localhost:8082/ (Nutzeroberfläche) beziehungsweise http://localhost:8082/index.php/admin/index (Admin-Bereich) erreichbar. 
 
 ### Plugin zu bestehender Installation hinzufügen
-Das Plugin ist bereits auf dem Server installiert. Mit den folgenden 4 Schritten kann es aktiviert werden. Nach der Aktivierung sind alle I14Y Beschriftungssets verfügbar. (Sobald das I14Y Plugin aktiviert ist, werden die I14Y Beschriftungssets in LimeSurvey täglich automatisch aktualisiert.
+Das Plugin ist bereits auf dem Server vorhanden. Mit den folgenden 4 Schritten kann es aktiviert werden. Nach der Aktivierung sind alle I14Y Beschriftungssets verfügbar. (Sobald das I14Y Plugin aktiviert ist, werden die I14Y Beschriftungssets in LimeSurvey täglich automatisch aktualisiert.
 
-1. Gehe zu Konfiguration  Plugins
-2. Dateien Scannen 
+1. Gehe zu Konfiguration>Plugins
+2. Dateien Scannen
 3. Beim Plugin I14Y klicke auf den Button Installieren
 4. Gehe zum Plugin I14Y und klicke aktivieren
 
