@@ -6,13 +6,11 @@ __pycache__/
 # LimeSurvey
 config/
 mysql/
-plugins/
+plugins/Demo
 sessions/
 upload/
 lsl-files/
 
-# i14y
-i14y/app/*.lsl
 
 # C extensions
 *.so

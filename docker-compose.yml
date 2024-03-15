@@ -3,7 +3,8 @@ version: '2'
 services: 
 
   limesurvey:
-    image: adamzammit/limesurvey:6.4.12
+    build: 
+      context: ./custom_limesurvey
     ports:
       - 8082:80
     environment:
@@ -14,7 +15,7 @@ services:
       LIMESURVEY_ADMIN_EMAIL: lime@lime.lime
       TZ: Europe/London
     volumes:
-      - ./plugins:/var/www/html/plugins
+      #- ./plugins:/var/www/html/plugins
       - ./upload:/var/www/html/upload
       - ./config:/var/www/html/application/config
       - ./sessions:/var/lime/sessions
@@ -34,3 +35,4 @@ services:
         - ./i14y/app:/app # Anpassen an Ihren Pfad
       depends_on:
         - mysql # Falls Ihr Service von der MySQL-Datenbank abhängig ist
+        - limesurvey

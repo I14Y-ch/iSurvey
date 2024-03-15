@@ -3,12 +3,15 @@ name: Create Limesurvey-file
 on:
   push:
     paths:
-      - 'codelists_to_lsl.py'
+      - 'i14y/app/codelists_to_lsl.py'
   pull_request:
     paths:
-      - 'codelists_to_lsl.py'
+      - 'i14y/app/codelists_to_lsl.py'
   schedule:
     - cron: '0 8 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   run-script:
@@ -25,25 +28,21 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # Add any dependencies here, for example:
-        pip install requests
-        pip install lxml
+        pip install -r i14y/requirements.txt
 
     - name: Run codelists_to_lsl.py
-      run: python codelists_to_lsl.py
+      run: python i14y/app/codelists_to_lsl.py
 
     - name: Commit changes
       run: |
         git config --global user.email "mathias.born@bfs.admin.ch"
         git config --global user.name "MathiasBornI14Y"
         git add isurvey_codelist.lsl
-
-        # Check if there are changes in isurvey_codelist.lsl
-        if git diff --cached --exit-code --quiet isurvey_codelist.lsl; then
+        if git diff --cached --exit-code --quiet; then
             echo "No changes in isurvey_codelist.lsl, skipping commit."
         else
-            DATE=`date +%Y-%m-%d`
+            DATE=$(date +%Y-%m-%d)
             git commit -m "Update isurvey_codelist.lsl - $DATE"
-            # Use the GH_PAT for the push operation
-            git -c http.extraheader="AUTHORIZATION: basic $(echo -n x-access-token:${{ secrets.GH_PAT }} | base64)" push
+            # Explicitly using the HTTPS protocol and including the PAT in the URL
+            git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/I14Y-ch/iSurvey.git
         fi
