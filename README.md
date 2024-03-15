@@ -9,12 +9,6 @@ iSurvey besteht aus einem Plugin für Limesurvey und einigen Skripten, mit denen
 
 ## Installation 
 
-### Plugin zu bestehender Installation hinzufügen
-
-Limesurvey ist eine webbasierte Software, mit der Befragungen durchgeführt werden können. Sie kann entweder kostenpflichtig als Software as a Service genutzt werden. Alternativ kann die quelloffene Software auch in der **Community Edition** auf einem eigenen Server installiert werden ([Downloads](https://community.limesurvey.org/downloads/), [Anleitung](https://manual.limesurvey.org/Installation_-_LimeSurvey_CE)). 
-
-Sobald die Installation abgschlossen ist, wird das Plugin iSurvey hinzugefügt.  
-
 ### Docker-Container installieren
 
 Damit Limesurvey und iSurvey auf einfache Weise ausprobiert werden kann, wird hier eine auf Docker basierende Installationsmöglichkeit zur Verfügung gestellt. 
@@ -29,6 +23,14 @@ Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende 
 2. Editieren der Anmeldedaten für den LimeSurvey-Administrator in der Datei __docker-compose.yml__ mit einem Texteditor.
 3. Installieren der Applikation mit ```docker-compose build```.
 4. Starten der Applikation mit ```docker-compose up -d```. Limesurvey ist nun unter http://localhost:8082/ (Nutzeroberfläche) beziehungsweise http://localhost:8082/index.php/admin/index (Admin-Bereich) erreichbar. 
+
+### Plugin zu bestehender Installation hinzufügen
+Das Plugin ist bereits auf dem Server installiert. Mit den folgenden 4 Schritten kann es aktiviert werden. Nach der Aktivierung sind alle I14Y Beschriftungssets verfügbar. (Sobald das I14Y Plugin aktiviert ist, werden die I14Y Beschriftungssets in LimeSurvey täglich automatisch aktualisiert.
+
+1. Gehe zu Konfiguration  Plugins
+2. Dateien Scannen 
+3. Beim Plugin I14Y klicke auf den Button Installieren
+4. Gehe zum Plugin I14Y und klicke aktivieren
 
 ## Hinweise zur Nutzung
 - Die Codelisten werden in der Regel einmal täglich aktualiert. 
