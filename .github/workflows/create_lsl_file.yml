@@ -43,5 +43,7 @@ jobs:
             DATE=`date +%Y-%m-%d`
             git commit -m "Update isurvey_codelist.lsl - $DATE"
             # Use the GH_PAT for the push operation
-            git -c http.extraheader="AUTHORIZATION: basic $(echo -n x-access-token:${{ secrets.GH_PAT }} | base64)" push
+            git -c http.extraHeader="AUTHORIZATION: basic ${GH_PAT}" push
         fi
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
