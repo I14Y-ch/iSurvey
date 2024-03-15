@@ -34,11 +34,11 @@ jobs:
       run: |
         git config --global user.email "mathias.born@bfs.admin.ch"
         git config --global user.name "MathiasBornI14Y"
-        git add i14y/app/isurvey_codelist.lsl
+        git add isurvey_codelist.lsl
 
         # Check if there are changes in isurvey_codelist.lsl
-        if git diff --cached --exit-code --quiet i14y/app/isurvey_codelist.lsl; then
-            echo "No changes in i14y/app/isurvey_codelist.lsl, skipping commit."
+        if git diff --cached --exit-code --quiet survey_codelist.lsl; then
+            echo "No changes in isurvey_codelist.lsl, skipping commit."
         else
             DATE=`date +%Y-%m-%d`
             git commit -m "Update isurvey_codelist.lsl - $DATE"
