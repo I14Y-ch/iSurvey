@@ -68,6 +68,16 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
 
         etree.SubElement(row_ls, 'languages').text = etree.CDATA(' '.join(languages))
 
+        '''
+        too_long = False
+        # If any of codelist['codelist']['value'] is longer than 20 chars
+        for entry in codelist['codelist']:
+            if len(entry['value']) > 20:
+                logging.warning(f'Code list {codelist["name"]["de"]} has a value {entry["value"]} longer than 20 chars, skipping...')
+                too_long = True
+                break
+        '''
+
         list_id = 1
         for code in codelist['codelist']:
             row_lbl = etree.SubElement(rows_lbl, 'row')
