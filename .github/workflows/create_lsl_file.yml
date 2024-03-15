@@ -32,6 +32,7 @@ jobs:
 
     - name: Commit changes
       run: |
+        git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/I14Y-ch/iSurvey.git
         git config --global user.email "mathias.born@bfs.admin.ch"
         git config --global user.name "MathiasBornI14Y"
         git add isurvey_codelist.lsl
@@ -41,6 +42,5 @@ jobs:
         else
             DATE=`date +%Y-%m-%d`
             git commit -m "Update isurvey_codelist.lsl - $DATE"
-            git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/I14Y-ch/iSurvey.git
             git push
         fi
