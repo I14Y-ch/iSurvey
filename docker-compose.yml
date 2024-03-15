@@ -28,7 +28,7 @@ services:
 
   i14y:
       build: 
-        context: . # Pfad zum Dockerfile, falls sich im aktuellen Verzeichnis
+        context: i14y
         dockerfile: Dockerfile # Name des Dockerfile, falls abweichend
       volumes:
         - ./i14y/app:/app # Anpassen an Ihren Pfad
