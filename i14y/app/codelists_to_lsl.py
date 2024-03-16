@@ -2,7 +2,7 @@ import requests
 from lxml import etree
 import logging
 
-# These codelists have been identified as problematic and will not use the value as the code
+# These codelists have been identified to cause a speicific SQL-Error (by manual uploading) and will not use the value as the code
 # The reason is not clear yet, and they were added to the list as a temporary solution
 SQL_LABEL_ID_ERROR_LIST = ['Zahlung der Leistung',
                            'Regime der sozialen Sicherheit in der Schweiz',
