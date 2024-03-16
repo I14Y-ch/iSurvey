@@ -10,7 +10,6 @@ plugins/Demo
 sessions/
 upload/
 plugins/index.html
-lsl-files/
 
 
 # C extensions
