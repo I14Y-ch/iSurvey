@@ -2,6 +2,28 @@ import requests
 from lxml import etree
 import logging
 
+# These codelists have been identified as problematic and will not use the value as the code
+# The reason is not clear yet, and they were added to the list as a temporary solution
+SQL_LABEL_ID_ERROR_LIST = ['Zahlung der Leistung',
+                           'Regime der sozialen Sicherheit in der Schweiz',
+                           'Regime der sozialen Sicherheit',
+                           'Gegengebiet',
+                           'Detaillierte Sozialleistung',
+                           'DocumentEntry.languageCode',
+                           'EprPurposeOfUse',
+                           'Art der Ausgabe',
+                           'Funktion des Sozialschutzes',
+                           'Gruppierung von Ländern in Europa für GRSS',
+                           'Bedürftigkeitsprüfung',
+                           'NOGA OFS50',
+                           'Art der Rente',
+                           'Art der Einnahme',
+                           'Hauptarten von Einnahmen',
+                           'EU Themenvokabular',
+                           'Aktualisierungsintervall',
+                           'I14Y Vertraulichkeit Personendaten']
+
+
 def download_i14y_data():
     logging.info('Downloading i14y data codelists...')
     url = 'https://input.i14y.admin.ch/api/ConceptSummary/search?page=0&pageSize=1000'
@@ -24,6 +46,8 @@ def download_i14y_data():
 
 
 def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
+    if len(codelists) == 1:
+        filename = f'lsl-files/isurvey_codelist_{codelists[0]["id"]}.lsl'
     logging.info(f'Generating LimeSurvey labelset {filename}...')
     document = etree.Element('document')
     etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
@@ -52,8 +76,9 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
     lang_id = 1
 
     for codelist in codelists:
-        if len(codelist['codelist']) > 1000:
-            logging.warning(f'Code list {codelist["name"]["de"]} has more than 1000 entries, skipping...')
+        if not len(codelists) == 1 and (len(codelist['codelist']) < 2 or len(codelist['codelist']) > 1000):
+            logging.warning(
+                f'Code list {codelist["name"]["de"]} has just one entry or more than 1000 entries, skipping...')
             continue
         row_ls = etree.SubElement(rows_ls, 'row')
         etree.SubElement(row_ls, 'lid').text = etree.CDATA(str(lid))
@@ -68,22 +93,24 @@ def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
 
         etree.SubElement(row_ls, 'languages').text = etree.CDATA(' '.join(languages))
 
-        '''
         too_long = False
         # If any of codelist['codelist']['value'] is longer than 20 chars
         for entry in codelist['codelist']:
             if len(entry['value']) > 20:
-                logging.warning(f'Code list {codelist["name"]["de"]} has a value {entry["value"]} longer than 20 chars, skipping...')
+                logging.warning(
+                    f'Code list {codelist["name"]["de"]} has a value {entry["value"]} longer than 20 chars, skipping...')
                 too_long = True
                 break
-        '''
 
         list_id = 1
         for code in codelist['codelist']:
             row_lbl = etree.SubElement(rows_lbl, 'row')
             etree.SubElement(row_lbl, 'id').text = etree.CDATA(str(code_id))
             etree.SubElement(row_lbl, 'lid').text = etree.CDATA(str(lid))
-            etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(4)}')
+            if too_long or codelist["name"]["de"] in SQL_LABEL_ID_ERROR_LIST:
+                etree.SubElement(row_lbl, 'code').text = etree.CDATA(f'L{str(list_id).zfill(4)}')
+            else:
+                etree.SubElement(row_lbl, 'code').text = etree.CDATA(code['value'])
             etree.SubElement(row_lbl, 'sortorder').text = etree.CDATA(
                 str(code_id))  # Assuming sortorder is the same as the id
             etree.SubElement(row_lbl, 'assessment_value').text = etree.CDATA("0")  # Assuming 0 as the assessment value
@@ -117,5 +144,12 @@ if __name__ == "__main__":
         for code in codelist['codelist']:
             code['name']['roh'] = code['name'].pop('rm')
 
+    logging.info('Generating LimeSurvey labelset with all codelists...')
     generate_limesurvey_labelset(codelists)
-    logging.info('Job successful')
+
+    logging.info('Generating LimeSurvey labelset with each codelist...')
+    for i in range(0, len(codelists)):
+        logging.info(f'Processing codelist on postion {i}')
+        generate_limesurvey_labelset([codelists[i]])
+
+    logging.info('Done!')

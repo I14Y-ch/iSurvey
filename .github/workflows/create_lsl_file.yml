@@ -40,7 +40,7 @@ jobs:
       run: |
         git config --global user.email "mathias.born@bfs.admin.ch"
         git config --global user.name "MathiasBornI14Y"
-        git add i14y/app/isurvey_codelist.lsl
+        git add i14y/app/isurvey_codelist.lsl i14y/app/lsl-files/*
         if git diff --cached --exit-code --quiet; then
             echo "No changes in i14y/app/isurvey_codelist.lsl, skipping commit."
         else
