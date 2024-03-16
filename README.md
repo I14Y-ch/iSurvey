@@ -5,7 +5,7 @@ Auf der [I14Y-Interoperabilitätsplattform](https://i14y.admin.ch) sind harmonis
 
 iSurvey ruft die öffentlich verfügbaren Codelisten von der I14Y-Interoperabilitätsplattform ab, so dass sich die Listen mit wenigen Klicks in eine Umfrage einbauen lassen. Dadurch können Umfragen rascher erstellt werden. Und es entstehen nachträglich weniger Probleme aufgrund abweichender Codierungen. 
 
-iSurvey besteht aus einem Plugin für Limesurvey und einigen Skripten, mit denen die Codelisten bezogen und aufbereitet werden. Dank Docker-Containern und einer detaillierten Anleitung lässt sich Limesurvey inklusive des Plugins iSurvey innert weniger Minuten installieren. 
+iSurvey besteht aus einem [Plugin für Limesurvey](https://github.com/I14Y-ch/iSurvey/tree/main/I14Y%20LimeSurvey%20Plugin) und einigen Skripten, mit denen die Codelisten bezogen und aufbereitet werden. Dank Docker-Containern und einer detaillierten Anleitung lässt sich Limesurvey inklusive des Plugins iSurvey innert weniger Minuten installieren. 
 
 ## Installation 
 
