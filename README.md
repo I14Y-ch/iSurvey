@@ -15,7 +15,8 @@ Damit Limesurvey und iSurvey auf einfache Weise ausprobiert werden kann, wird hi
 
 | :exclamation:  Prototyp nicht für sensible Daten verwenden   |
 |-----------------------------------------|
-| Bei diesem Docker-Container handelt es sich um einen Prototyp. Er eignet sich für Tests. Ohne weitergehende Abklärungen sollte er nicht produktiv durch Behörden genutzt werden. Insbesondere dürfen damit keine schützenswerten Daten erhoben werden. Der Prototyp enthält einen Limesurvey-Container, der von einem privaten Nutzer angeboten wird. Empfohlen wird eine Installation einer geprüften Limesurvey-Version durch die zuständigen Behörde. Diese kann mit dem hier publizierten Plugin ergänzt werden. |
+| Ohne weitergehende Abklärungen sollte iSurvey nicht produktiv genutzt werden. Insbesondere dürfen damit keine schützenswerten Daten erhoben werden. Die Docker Compose Installation enthält [limesurvey-docker von adamzammit](https://github.com/adamzammit/limesurvey-docker). 
+Empfohlen wird eine Installation einer geprüften Limesurvey-Version. Diese kann mit dem [hier publizierten Plugin](https://github.com/I14Y-ch/iSurvey/tree/main/I14Y%20LimeSurvey%20Plugin) ergänzt werden. |
 
 Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende Schritte auf der Kommandozeile nötig. Voraussetzungen: Git, Docker und Docker-Compose müssen installiert sein.  
 
