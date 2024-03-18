@@ -23,11 +23,11 @@ Wer Limesurvey mit dem I14Y-Plugin kurz ausprobieren möchte, nutzt dazu am best
 
 Damit Limesurvey und iSurvey auf einfache Weise ausprobiert werden kann, wird hier eine auf Docker basierende Installationsmöglichkeit zur Verfügung gestellt. 
 
-| :exclamation:  Prototyp nicht für sensible Daten verwenden   |
+|:exclamation: Prototyp nicht für sensible Daten verwenden|
 |-----------------------------------------|
-| Ohne weitergehende Abklärungen sollte iSurvey nicht produktiv genutzt werden. Insbesondere dürfen damit keine schützenswerten Daten erhoben werden. Die Docker Compose Installation enthält [limesurvey-docker von adamzammit](https://github.com/adamzammit/limesurvey-docker). Empfohlen wird eine Installation einer geprüften Limesurvey-Version. Diese kann mit dem [hier publizierten Plugin](https://github.com/I14Y-ch/iSurvey/tree/main/I14Y%20LimeSurvey%20Plugin) ergänzt werden. |
+|Ohne weitergehende Abklärungen sollte iSurvey nicht produktiv genutzt werden. Insbesondere dürfen damit keine schützenswerten Daten erhoben werden. Die Installation enthält einen [Limesurvey-Container](https://github.com/adamzammit/limesurvey-docker) von Adam Zammit, der für die Nichtregierungsorganisation Australian Consortium for Social and Political Research Incorporated arbeitet. Statt diese zu nutzen, kann auch eine selbst geprüfte Limesurvey-Version eingesetzt werden. Diese lässt sich mit dem [hier publizierten Plugin](https://github.com/I14Y-ch/iSurvey/tree/main/I14Y%20LimeSurvey%20Plugin) ergänzen. Die Interoperabilitätsstelle leistet keinen Support für das Plugin. Die Nutzung erfolgt auf eigenes Risiko.|
 
-Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende Schritte auf der Kommandozeile nötig. Voraussetzungen: Git, Docker und Docker-Compose müssen installiert sein.  
+Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende Schritte auf der Kommandozeile nötig. Voraussetzung: Git, Docker und Docker-Compose müssen installiert sein.  
 
 1. Auschecken des Repository mit ```git clone https://github.com/I14Y-ch/iSurvey.git```. Wechsel ins neu erstellte Verzeichnis: ```cd iSurvey```. 
 2. Editieren der Anmeldedaten für den LimeSurvey-Administrator in der Datei __docker-compose.yml__ mit einem Texteditor.
@@ -35,14 +35,14 @@ Um die Testversion auf dem lokalen Computer zu installieren, sind untenstehende 
 4. Starten der Applikation mit ```docker-compose up -d```. Limesurvey ist nun unter http://localhost:8082/ (Nutzeroberfläche) beziehungsweise http://localhost:8082/index.php/admin/index (Admin-Bereich) erreichbar. 
 
 ### Plugin zu bestehender Installation hinzufügen
-Das Plugin ist bereits auf dem Server vorhanden. Mit den folgenden 4 Schritten kann es aktiviert werden. Nach der Aktivierung sind alle I14Y Beschriftungssets verfügbar. Sobald das I14Y Plugin aktiviert ist, werden die I14Y Beschriftungssets in LimeSurvey täglich automatisch aktualisiert.
+Das Plugin ist bereits auf dem Server vorhanden. Mit den folgenden vier Schritten kann es aktiviert werden. Nach der Aktivierung sind alle I14Y-Beschriftungssets verfügbar. Sobald das I14Y-Plugin aktiviert ist, werden die Beschriftungssets in LimeSurvey täglich automatisch aktualisiert.
 
 1. Gehe zu Konfiguration>Plugins
 2. Dateien Scannen
 3. Beim Plugin I14Y klicke auf den Button Installieren
 4. Gehe zum Plugin I14Y und klicke aktivieren
 
-## Anleitung Limesurvey
+## Nutzung von Limesurvey mit dem I14Y-Plugin
 1. Erstellen Sie eine neue Umfrage. Wählen Sie als Sprache Deutsch aus.
 2. Erfassen Sie eine erste Frage. Wählen Sie rechts als Fragetipp zum Beispiel eine Einfachauswahl aus. 
 3. Klicken Sie nun auf "Beschriftungsset laden". In der Liste sehen Sie nun alle Codelisten von I14Y. Wählen Sie die passende aus. Klicken Sie auf "Ersetzen". 
