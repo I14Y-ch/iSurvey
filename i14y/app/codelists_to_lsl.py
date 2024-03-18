@@ -31,13 +31,13 @@ def download_i14y_data():
     data = requests.get(url).json()
 
     code_lists = []
-    codes = [(entry['id'], entry['name']) for entry in data if entry['conceptType'] == 'CodeList']
+    codes = [(entry['id'], entry['identifier'], entry['name']) for entry in data if entry['conceptType'] == 'CodeList']
 
-    for id, name in codes:
+    for id, identifier, name in codes:
         url = f'https://input.i14y.admin.ch/api/ConceptInput/{id}/codelistEntries?page=1&pageSize=10000'
         response = requests.get(url)
         if response.status_code == 200:
-            code_lists.append({'id': id, 'name': name, 'codelist': response.json()})
+            code_lists.append({'id': id, 'identifier': identifier, 'name': name, 'codelist': response.json()})
 
     # save_file = open("codelists.json", "w")
     # json.dump(codelists, save_file, indent = 6)
@@ -48,7 +48,7 @@ def download_i14y_data():
 
 def generate_limesurvey_labelset(codelists, filename="isurvey_codelist.lsl"):
     if len(codelists) == 1:
-        filename = f'lsl-files/isurvey_codelist_{codelists[0]["id"]}.lsl'
+        filename = f'lsl-files/{codelists[0]["identifier"]}.lsl'
     logging.info(f'Generating LimeSurvey labelset {filename}...')
     document = etree.Element('document')
     etree.SubElement(document, 'LimeSurveyDocType').text = 'Label set'
