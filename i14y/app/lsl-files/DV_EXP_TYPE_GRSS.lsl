@@ -103,217 +103,217 @@
       <row>
         <id><![CDATA[1]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Verwaltungskosten]]></title>
+        <title><![CDATA[Gesamtausgaben]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[2]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Administration costs]]></title>
+        <title><![CDATA[Total expenditures]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[3]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Coûts administratifs]]></title>
+        <title><![CDATA[Total des dépenses]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[4]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Costi di amministrazione]]></title>
+        <title><![CDATA[Spese totali]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[5]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Sonstige Ausgaben insgesamt]]></title>
+        <title><![CDATA[Sozialschutzleistungen]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[6]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Total other expenditure]]></title>
+        <title><![CDATA[Social protection benefits]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[7]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Total des autres dépenses]]></title>
+        <title><![CDATA[Prestations de protection sociale]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[8]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Totale altre spese]]></title>
+        <title><![CDATA[Prestazioni di protezione sociale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[9]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Sonstige Ausgaben mit Ausnahme der Ausgaben für Vermögenseinkommen]]></title>
+        <title><![CDATA[Verwaltungskosten]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[10]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Other expenditure other than property income expenditure]]></title>
+        <title><![CDATA[Administration costs]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[11]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Autres dépenses autres que celles liées aux revenus de la propriété]]></title>
+        <title><![CDATA[Coûts administratifs]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[12]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Altre spese diverse da quelle per redditi da capitale]]></title>
+        <title><![CDATA[Costi di amministrazione]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[13]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Ausgaben für Vermögenseinkommen]]></title>
+        <title><![CDATA[Gesamte Überweisungen an andere Regime]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[14]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Property income expenditure]]></title>
+        <title><![CDATA[Total transfers to other schemes]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[15]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Dépenses liées aux revenus de la propriété]]></title>
+        <title><![CDATA[Total des transferts vers d'autres régimes]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[16]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Spese per redditi da capitale]]></title>
+        <title><![CDATA[Totale trasferimenti ad altri regimi]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[17]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Gesamte Überweisungen an andere Regime]]></title>
+        <title><![CDATA[Umgeleitete Sozialbeiträge an andere Regime]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[18]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Total transfers to other schemes]]></title>
+        <title><![CDATA[Social contributions rerouted to other schemes]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[19]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Total des transferts vers d'autres régimes]]></title>
+        <title><![CDATA[Contributions sociales réaffectées à d'autres régimes]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[20]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Totale trasferimenti ad altri regimi]]></title>
+        <title><![CDATA[Contributi sociali trasferiti ad altri regimi]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[21]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Umgeleitete Sozialbeiträge an andere Regime]]></title>
+        <title><![CDATA[Sonstige Transfers an andere gebietsansässige Regime]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[22]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Social contributions rerouted to other schemes]]></title>
+        <title><![CDATA[Other transfers to other resident schemes]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[23]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Contributions sociales réaffectées à d'autres régimes]]></title>
+        <title><![CDATA[Autres transferts vers d'autres régimes résidents]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[24]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Contributi sociali trasferiti ad altri regimi]]></title>
+        <title><![CDATA[Altri trasferimenti ad altri regimi residenti]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[25]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Sonstige Transfers an andere gebietsansässige Regime]]></title>
+        <title><![CDATA[Sonstige Ausgaben insgesamt]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[26]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Other transfers to other resident schemes]]></title>
+        <title><![CDATA[Total other expenditure]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[27]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Autres transferts vers d'autres régimes résidents]]></title>
+        <title><![CDATA[Total des autres dépenses]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[28]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Altri trasferimenti ad altri regimi residenti]]></title>
+        <title><![CDATA[Totale altre spese]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[29]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Sozialschutzleistungen]]></title>
+        <title><![CDATA[Ausgaben für Vermögenseinkommen]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[30]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Social protection benefits]]></title>
+        <title><![CDATA[Property income expenditure]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[31]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Prestations de protection sociale]]></title>
+        <title><![CDATA[Dépenses liées aux revenus de la propriété]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[32]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Prestazioni di protezione sociale]]></title>
+        <title><![CDATA[Spese per redditi da capitale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[33]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Gesamtausgaben]]></title>
+        <title><![CDATA[Sonstige Ausgaben mit Ausnahme der Ausgaben für Vermögenseinkommen]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[34]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Total expenditures]]></title>
+        <title><![CDATA[Other expenditure other than property income expenditure]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[35]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Total des dépenses]]></title>
+        <title><![CDATA[Autres dépenses autres que celles liées aux revenus de la propriété]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[36]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Spese totali]]></title>
+        <title><![CDATA[Altre spese diverse da quelle per redditi da capitale]]></title>
         <language><![CDATA[it]]></language>
       </row>
     </rows>

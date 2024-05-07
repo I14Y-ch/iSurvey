@@ -30,14 +30,14 @@
       <row>
         <id><![CDATA[1]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[AGGREGATED]]></code>
+        <code><![CDATA[ELEMENTARY]]></code>
         <sortorder><![CDATA[1]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[2]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[ELEMENTARY]]></code>
+        <code><![CDATA[AGGREGATED]]></code>
         <sortorder><![CDATA[2]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
@@ -54,49 +54,49 @@
       <row>
         <id><![CDATA[1]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[aggregiert]]></title>
+        <title><![CDATA[elementar]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[2]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[aggregated]]></title>
+        <title><![CDATA[elementary]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[3]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[agrégé]]></title>
+        <title><![CDATA[élémentaire]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[4]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[aggregato]]></title>
+        <title><![CDATA[elementare]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[5]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[elementar]]></title>
+        <title><![CDATA[aggregiert]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[6]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[elementary]]></title>
+        <title><![CDATA[aggregated]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[7]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[élémentaire]]></title>
+        <title><![CDATA[agrégé]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[8]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[elementare]]></title>
+        <title><![CDATA[aggregato]]></title>
         <language><![CDATA[it]]></language>
       </row>
     </rows>

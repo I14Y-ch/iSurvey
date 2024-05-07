@@ -68,73 +68,73 @@
       <row>
         <id><![CDATA[1]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Bedürftigkeitsgeprüft]]></title>
+        <title><![CDATA[Total]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[2]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Means-tested]]></title>
+        <title><![CDATA[Total]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[3]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Sous condition de ressources]]></title>
+        <title><![CDATA[Total]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[4]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Soggetti a condizioni di reddito]]></title>
+        <title><![CDATA[Totale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[5]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Nicht bedürftigkeitsgeprüft]]></title>
+        <title><![CDATA[Bedürftigkeitsgeprüft]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[6]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Non Means-tested]]></title>
+        <title><![CDATA[Means-tested]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[7]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Sans condition de ressources]]></title>
+        <title><![CDATA[Sous condition de ressources]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[8]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Non soggetto a particolari condizioni di reddito]]></title>
+        <title><![CDATA[Soggetti a condizioni di reddito]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[9]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Total]]></title>
+        <title><![CDATA[Nicht bedürftigkeitsgeprüft]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[10]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Total]]></title>
+        <title><![CDATA[Non Means-tested]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[11]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Total]]></title>
+        <title><![CDATA[Sans condition de ressources]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[12]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Totale]]></title>
+        <title><![CDATA[Non soggetto a particolari condizioni di reddito]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
