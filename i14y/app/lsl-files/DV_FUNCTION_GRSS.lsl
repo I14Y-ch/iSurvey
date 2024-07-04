@@ -124,289 +124,289 @@
       <row>
         <id><![CDATA[1]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Funktionen insgesamt]]></title>
+        <title><![CDATA[Invalidität]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[2]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Total functions]]></title>
+        <title><![CDATA[Disability]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[3]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Total des fonctions]]></title>
+        <title><![CDATA[Invalidité]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[4]]></id>
         <label_id><![CDATA[1]]></label_id>
-        <title><![CDATA[Totale funzioni]]></title>
+        <title><![CDATA[Invalidità]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[5]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Krankheit/Gesundheitsversorgung]]></title>
+        <title><![CDATA[Soziale Ausgrenzung, n.e.c.]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[6]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Sickness/healthcare]]></title>
+        <title><![CDATA[Social exclusion, n.e.c.]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[7]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Maladie/soins de santé]]></title>
+        <title><![CDATA[Exclusion sociale, n.c.a.]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[8]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[Malattia/cure sanitarie]]></title>
+        <title><![CDATA[Esclusione sociale, n.e.c.]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[9]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Invalidität]]></title>
+        <title><![CDATA[Familie/Kinder]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[10]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Disability]]></title>
+        <title><![CDATA[Family/Children]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[11]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Invalidité]]></title>
+        <title><![CDATA[Famille/enfants]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[12]]></id>
         <label_id><![CDATA[3]]></label_id>
-        <title><![CDATA[Invalidità]]></title>
+        <title><![CDATA[Famiglia/figli]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[13]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Alter]]></title>
+        <title><![CDATA[Wohnen]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[14]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Old age]]></title>
+        <title><![CDATA[Housing]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[15]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Vieillesse]]></title>
+        <title><![CDATA[Logement]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[16]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Vecchiaia]]></title>
+        <title><![CDATA[Abitazione]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[17]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Hinterbliebene]]></title>
+        <title><![CDATA[Wohnen und soziale Ausgrenzung]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[18]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Survivors]]></title>
+        <title><![CDATA[Housing and social exclusion]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[19]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Survivants]]></title>
+        <title><![CDATA[Logement et exclusion sociale]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[20]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Superstiti]]></title>
+        <title><![CDATA[Abitazione ed esclusione sociale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[21]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Familie/Kinder]]></title>
+        <title><![CDATA[Alter]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[22]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Family/Children]]></title>
+        <title><![CDATA[Old age]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[23]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Famille/enfants]]></title>
+        <title><![CDATA[Vieillesse]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[24]]></id>
         <label_id><![CDATA[6]]></label_id>
-        <title><![CDATA[Famiglia/figli]]></title>
+        <title><![CDATA[Vecchiaia]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[25]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Arbeitslosigkeit]]></title>
+        <title><![CDATA[Alter und Hinterbliebene]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[26]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Unemployment]]></title>
+        <title><![CDATA[Old age and survivors]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[27]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Chômage]]></title>
+        <title><![CDATA[Vieillesse et survivants]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[28]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Disoccupazione]]></title>
+        <title><![CDATA[Vecchiaia e superstiti]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[29]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Wohnen]]></title>
+        <title><![CDATA[Krankheit/Gesundheitsversorgung]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[30]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Housing]]></title>
+        <title><![CDATA[Sickness/healthcare]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[31]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Logement]]></title>
+        <title><![CDATA[Maladie/soins de santé]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[32]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Abitazione]]></title>
+        <title><![CDATA[Malattia/cure sanitarie]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[33]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Soziale Ausgrenzung, n.e.c.]]></title>
+        <title><![CDATA[Krankheit und Invalidität]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[34]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Social exclusion, n.e.c.]]></title>
+        <title><![CDATA[Sickness and disability]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[35]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Exclusion sociale, n.c.a.]]></title>
+        <title><![CDATA[Maladie et invalidité]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[36]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Esclusione sociale, n.e.c.]]></title>
+        <title><![CDATA[Malattia e invalidità]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[37]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[Alter und Hinterbliebene]]></title>
+        <title><![CDATA[Hinterbliebene]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[38]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[Old age and survivors]]></title>
+        <title><![CDATA[Survivors]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[39]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[Vieillesse et survivants]]></title>
+        <title><![CDATA[Survivants]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[40]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[Vecchiaia e superstiti]]></title>
+        <title><![CDATA[Superstiti]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[41]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Krankheit und Invalidität]]></title>
+        <title><![CDATA[Funktionen insgesamt]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[42]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Sickness and disability]]></title>
+        <title><![CDATA[Total functions]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[43]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Maladie et invalidité]]></title>
+        <title><![CDATA[Total des fonctions]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[44]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Malattia e invalidità]]></title>
+        <title><![CDATA[Totale funzioni]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[45]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Wohnen und soziale Ausgrenzung]]></title>
+        <title><![CDATA[Arbeitslosigkeit]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[46]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Housing and social exclusion]]></title>
+        <title><![CDATA[Unemployment]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[47]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Logement et exclusion sociale]]></title>
+        <title><![CDATA[Chômage]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[48]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Abitazione ed esclusione sociale]]></title>
+        <title><![CDATA[Disoccupazione]]></title>
         <language><![CDATA[it]]></language>
       </row>
     </rows>

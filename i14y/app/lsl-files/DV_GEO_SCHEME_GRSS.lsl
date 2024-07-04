@@ -120,25 +120,25 @@
       <row>
         <id><![CDATA[5]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[EU27]]></title>
+        <title><![CDATA[Osteuropa]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[6]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[EU27]]></title>
+        <title><![CDATA[Eastern Europe]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[7]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[UE-27]]></title>
+        <title><![CDATA[Europe orientale]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[8]]></id>
         <label_id><![CDATA[2]]></label_id>
-        <title><![CDATA[UE-27]]></title>
+        <title><![CDATA[Europa orientale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
@@ -168,49 +168,49 @@
       <row>
         <id><![CDATA[13]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Nordeuropa]]></title>
+        <title><![CDATA[EU27]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[14]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Northern Europe]]></title>
+        <title><![CDATA[EU27]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[15]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Europe septentrionale]]></title>
+        <title><![CDATA[UE-27]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[16]]></id>
         <label_id><![CDATA[4]]></label_id>
-        <title><![CDATA[Europa settentrionale]]></title>
+        <title><![CDATA[UE-27]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[17]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Westeuropa]]></title>
+        <title><![CDATA[Nordeuropa]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[18]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Western Europe]]></title>
+        <title><![CDATA[Northern Europe]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[19]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Europe occidentale]]></title>
+        <title><![CDATA[Europe septentrionale]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[20]]></id>
         <label_id><![CDATA[5]]></label_id>
-        <title><![CDATA[Europa occidentale]]></title>
+        <title><![CDATA[Europa settentrionale]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
@@ -240,49 +240,49 @@
       <row>
         <id><![CDATA[25]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Osteuropa]]></title>
+        <title><![CDATA[Türkei]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[26]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Eastern Europe]]></title>
+        <title><![CDATA[Turkey]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[27]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Europe orientale]]></title>
+        <title><![CDATA[Turquie]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[28]]></id>
         <label_id><![CDATA[7]]></label_id>
-        <title><![CDATA[Europa orientale]]></title>
+        <title><![CDATA[Turchia]]></title>
         <language><![CDATA[it]]></language>
       </row>
       <row>
         <id><![CDATA[29]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Türkei]]></title>
+        <title><![CDATA[Westeuropa]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[30]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Turkey]]></title>
+        <title><![CDATA[Western Europe]]></title>
         <language><![CDATA[en]]></language>
       </row>
       <row>
         <id><![CDATA[31]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Turquie]]></title>
+        <title><![CDATA[Europe occidentale]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[32]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Turchia]]></title>
+        <title><![CDATA[Europa occidentale]]></title>
         <language><![CDATA[it]]></language>
       </row>
     </rows>

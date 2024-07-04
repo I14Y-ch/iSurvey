@@ -79,70 +79,70 @@
       <row>
         <id><![CDATA[8]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[33]]></code>
+        <code><![CDATA[20]]></code>
         <sortorder><![CDATA[8]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[9]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[34]]></code>
+        <code><![CDATA[21]]></code>
         <sortorder><![CDATA[9]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[10]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[35]]></code>
+        <code><![CDATA[22]]></code>
         <sortorder><![CDATA[10]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[11]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[20]]></code>
+        <code><![CDATA[23]]></code>
         <sortorder><![CDATA[11]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[12]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[21]]></code>
+        <code><![CDATA[24]]></code>
         <sortorder><![CDATA[12]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[13]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[22]]></code>
+        <code><![CDATA[25]]></code>
         <sortorder><![CDATA[13]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[14]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[23]]></code>
+        <code><![CDATA[26]]></code>
         <sortorder><![CDATA[14]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[15]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[24]]></code>
+        <code><![CDATA[33]]></code>
         <sortorder><![CDATA[15]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[16]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[25]]></code>
+        <code><![CDATA[34]]></code>
         <sortorder><![CDATA[16]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
       <row>
         <id><![CDATA[17]]></id>
         <lid><![CDATA[1]]></lid>
-        <code><![CDATA[26]]></code>
+        <code><![CDATA[35]]></code>
         <sortorder><![CDATA[17]]></sortorder>
         <assessment_value><![CDATA[0]]></assessment_value>
       </row>
@@ -460,121 +460,121 @@
       <row>
         <id><![CDATA[15]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[AHV-Zusatzrente für Ehegatte (ordentlich)]]></title>
+        <title><![CDATA[Altersrente (ausserordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[16]]></id>
         <label_id><![CDATA[8]]></label_id>
-        <title><![CDATA[Rente complémentaire AVS en faveur du conjoint (ordinaire)]]></title>
+        <title><![CDATA[Rente de vieillesse (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[17]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[AHV-Kinderzusatzrente vom Vater (ordentlich)]]></title>
+        <title><![CDATA[Ehepaar-Altersrente (ausserordentlich), vor 2001]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[18]]></id>
         <label_id><![CDATA[9]]></label_id>
-        <title><![CDATA[Rente pour enfant AVS liée à la rente du père (ordinaire)]]></title>
+        <title><![CDATA[Demi-rente de vieillesse (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[19]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[AHV-Kinderzusatzrente von der Mutter (ordentlich)]]></title>
+        <title><![CDATA[Halbe Ehepaar-Altersrente (ausserordentlich), vor 2001]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[20]]></id>
         <label_id><![CDATA[10]]></label_id>
-        <title><![CDATA[Rente pour enfant AVS liée à la rente de la mère (ordinaire)]]></title>
+        <title><![CDATA[Rente de vieillesse pour couple (extraordinaire), avant 2001]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[21]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Altersrente (ausserordentlich)]]></title>
+        <title><![CDATA[Witwen-/Witwerrente (ausserordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[22]]></id>
         <label_id><![CDATA[11]]></label_id>
-        <title><![CDATA[Rente de vieillesse (extraordinaire)]]></title>
+        <title><![CDATA[Rente de veuve ou de veuf (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[23]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Ehepaar-Altersrente (ausserordentlich), vor 2001]]></title>
+        <title><![CDATA[Waisenrente vom Vater (ausserordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[24]]></id>
         <label_id><![CDATA[12]]></label_id>
-        <title><![CDATA[Demi-rente de vieillesse (extraordinaire)]]></title>
+        <title><![CDATA[Rente d’orphelin de père (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[25]]></id>
         <label_id><![CDATA[13]]></label_id>
-        <title><![CDATA[Halbe Ehepaar-Altersrente (ausserordentlich), vor 2001]]></title>
+        <title><![CDATA[Waisenrente von der Mutter (ausserordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[26]]></id>
         <label_id><![CDATA[13]]></label_id>
-        <title><![CDATA[Rente de vieillesse pour couple (extraordinaire), avant 2001]]></title>
+        <title><![CDATA[Rente d’orphelin de mère (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[27]]></id>
         <label_id><![CDATA[14]]></label_id>
-        <title><![CDATA[Witwen-/Witwerrente (ausserordentlich)]]></title>
+        <title><![CDATA[Doppelte Waisenrente 60% (ausserordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[28]]></id>
         <label_id><![CDATA[14]]></label_id>
-        <title><![CDATA[Rente de veuve ou de veuf (extraordinaire)]]></title>
+        <title><![CDATA[Rente d’orphelin 60 % (extraordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[29]]></id>
         <label_id><![CDATA[15]]></label_id>
-        <title><![CDATA[Waisenrente vom Vater (ausserordentlich)]]></title>
+        <title><![CDATA[AHV-Zusatzrente für Ehegatte (ordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[30]]></id>
         <label_id><![CDATA[15]]></label_id>
-        <title><![CDATA[Rente d’orphelin de père (extraordinaire)]]></title>
+        <title><![CDATA[Rente complémentaire AVS en faveur du conjoint (ordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[31]]></id>
         <label_id><![CDATA[16]]></label_id>
-        <title><![CDATA[Waisenrente von der Mutter (ausserordentlich)]]></title>
+        <title><![CDATA[AHV-Kinderzusatzrente vom Vater (ordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[32]]></id>
         <label_id><![CDATA[16]]></label_id>
-        <title><![CDATA[Rente d’orphelin de mère (extraordinaire)]]></title>
+        <title><![CDATA[Rente pour enfant AVS liée à la rente du père (ordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
         <id><![CDATA[33]]></id>
         <label_id><![CDATA[17]]></label_id>
-        <title><![CDATA[Doppelte Waisenrente 60% (ausserordentlich)]]></title>
+        <title><![CDATA[AHV-Kinderzusatzrente von der Mutter (ordentlich)]]></title>
         <language><![CDATA[de]]></language>
       </row>
       <row>
         <id><![CDATA[34]]></id>
         <label_id><![CDATA[17]]></label_id>
-        <title><![CDATA[Rente d’orphelin 60 % (extraordinaire)]]></title>
+        <title><![CDATA[Rente pour enfant AVS liée à la rente de la mère (ordinaire)]]></title>
         <language><![CDATA[fr]]></language>
       </row>
       <row>
